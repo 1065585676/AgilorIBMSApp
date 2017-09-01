@@ -1,0 +1,196 @@
+--------------------------------
+706huiyishi-1
+baiyekaiguan	1.4.40	0/0/71    0-open\ 1-close
+shengjiang 	0.4.40	0/6/25    0-255
+
+
+--------------------------------
+xiuxianshi-2
+baiyekaiguan	1.4.40	0/0/69
+shengjiang 	0.4.40	0/6/24
+
+xiuxianshi-1
+baiyekaiguan	1.4.40	0/0/67
+shengjiang 	0.4.40	0/6/23
+
+--------------------------------
+703huiyishi-2
+baiyekaiguan	1.4.40	0/0/18	# 待测试！
+shengjiang 	0.4.40	0/6/22
+
+--------------------------------
+suozhangshi-2
+baiyekaiguan	1.4.40	0/0/20  # 待测试！
+shengjiang 	0.4.40	0/6/21
+
+--------------------------------
+xi-12
+baiyekaiguan	1.4.40	0/0/61
+shengjiang 	0.4.40	0/6/20
+
+--------------------------------
+xi-11
+baiyekaiguan	1.4.40	0/0/59
+shengjiang 	0.4.40	0/6/19
+
+--------------------------------
+xi-10
+baiyekaiguan	1.4.40	0/0/57
+shengjiang 	0.4.40	0/6/18
+
+--------------------------------
+xi-9
+baiyekaiguan	1.4.40	0/0/55
+shengjiang 	0.4.40	0/6/17
+
+--------------------------------
+xi-8
+baiyekaiguan	1.4.40	0/0/53
+shengjiang 	0.4.40	0/6/16
+
+--------------------------------
+xi-7
+baiyekaiguan	1.4.40	0/0/49	
+shengjiang 	0.4.40	0/6/14
+
+--------------------------------
+xi-6
+baiyekaiguan	1.4.40	0/0/51
+shengjiang 	0.4.40	0/6/15
+
+--------------------------------
+xi-5
+baiyekaiguan	1.4.40	0/0/47
+shengjiang 	0.4.40	0/6/13
+
+--------------------------------
+xi-4
+baiyekaiguan	1.4.40	0/0/45
+shengjiang 	0.4.40	0/6/12
+
+--------------------------------
+xi-3
+baiyekaiguan	1.4.40	0/0/43
+shengjiang 	0.4.40	0/6/11
+
+--------------------------------
+xi-2
+baiyekaiguan	1.4.40	0/0/41
+shengjiang 	0.4.40	0/6/10
+
+--------------------------------
+xi-1
+baiyekaiguan	1.4.40	0/0/39
+shengjiang 	0.4.40	0/6/9
+
+--------------------------------
+bangongshi
+baiyekaiguan	1.4.40	0/0/54
+shengjiang 	0.4.40	0/6/8
+
+--------------------------------
+yuanzhangshi-4
+baiyekaiguan	1.4.40	0/0/53
+shengjiang 	0.4.40	0/6/7
+
+--------------------------------
+yuanzhangshi-3
+baiyekaiguan	1.4.40	0/0/52
+shengjiang 	0.4.40	0/6/6
+
+--------------------------------
+yuanzhangshi-2
+baiyekaiguan	1.4.40	0/0/51
+shengjiang 	0.4.40	0/6/5
+
+--------------------------------
+yuanzhangshi-1
+baiyekaiguan	1.4.40	0/0/50
+shengjiang 	0.4.40	0/6/4
+
+--------------------------------
+kuaijishi
+baiyekaiguan	1.4.40	0/0/49
+shengjiang 	0.4.40	0/6/3
+
+--------------------------------
+dong-1
+baiyekaiguan	1.4.40	0/0/25
+shengjiang 	0.4.40	0/6/2
+
+--------------------------------
+dong-2
+baiyekaiguan	1.4.40	0/0/91
+shengjiang 	0.4.40	0/6/35
+
+--------------------------------
+dong-3
+baiyekaiguan	1.4.40	0/0/89
+shengjiang 	0.4.40	0/6/34
+
+--------------------------------
+dong-4
+baiyekaiguan	1.4.40	0/0/23
+shengjiang 	0.4.40	0/6/1
+
+--------------------------------
+dong-5
+baiyekaiguan	1.4.40	0/0/21
+shengjiang 	0.4.40	0/6/0
+
+--------------------------------
+dong-6
+baiyekaiguan	1.4.40	0/0/87
+shengjiang 	0.4.40	0/6/33
+
+--------------------------------
+dong-7
+baiyekaiguan	1.4.40	0/0/85
+shengjiang 	0.4.40	0/6/32
+
+--------------------------------
+dong-8
+baiyekaiguan	1.4.40	0/0/81
+shengjiang 	0.4.40	0/6/30
+
+--------------------------------
+dong-9
+baiyekaiguan	1.4.40	0/0/83
+shengjiang 	0.4.40	0/6/31
+
+--------------------------------
+dong-10
+baiyekaiguan	1.4.40	0/0/79
+shengjiang 	0.4.40	0/6/29
+
+--------------------------------
+dong-11
+baiyekaiguan	1.4.40	0/0/77
+shengjiang 	0.4.40	0/6/28
+
+--------------------------------
+dong-12
+baiyekaiguan	1.4.40	0/0/75
+shengjiang 	0.4.40	0/6/27
+
+--------------------------------
+suozhangshi-1
+baiyekaiguan	1.4.40	0/0/73
+shengjiang 	0.4.40	0/6/26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
