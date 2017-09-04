@@ -15,7 +15,7 @@
 
 <center>
 <div style="width: 90%; height: 100%; overflow:auto;">
-	<div class="curtain-container">
+	<div class="curtain-container-7">
 
 		<!-- 窗帘 -->
 		<button class="chuanglian" style="position: absolute; left: 5px; top: 80px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_4')"></button>

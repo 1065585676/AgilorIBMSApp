@@ -14,7 +14,7 @@
 
 <center>
 <div style="width: 90%; height: 100%; overflow:auto;">
-	<div class="lighting-container">
+	<div class="lighting-container-7">
 
 		<!-- 工位灯 东办公区  -->
 		<button class="btn gongweibtn" style="position: absolute; left: 22px; top: 540px;" data-toggle="modal" data-target="#singlelighting" onclick="$('#lightingLabelId').html('LIG_708_19_S')">708-19-S</button>
@@ -152,7 +152,7 @@
 		<button class="shangzhaodeng" style="position: absolute; left: 935px; top: 460px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_701_TONG_DENG_N')"></button>
 
 		<!-- 吧台灯 西 -->
-		<button class="shangzhaodeng" style="position: absolute; left: 880px; top: 290px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_BA_TAI_DENG')"></button>
+		<button class="shangzhaodeng" style="position: absolute; left: 870px; top: 290px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_BA_TAI_DENG')"></button>
 
 		<!-- 休闲室 -->
 		<button class="shangzhaodeng" style="position: absolute; left: 585px; top: 510px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_XIU_XIAN_SHI')"></button>

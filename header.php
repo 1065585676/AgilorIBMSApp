@@ -62,7 +62,7 @@
 			background: #BABABA;
 		}
 
-		.lighting-container {
+		.lighting-container-7 {
 			background-image: url('image/7.png');
 			background-size: 100%;
 			width: 1220px;
@@ -71,8 +71,24 @@
 			margin-left: 50px;
 			margin-top: 50px;
 		}
-		.curtain-container {
+		.lighting-container-8 {
+			background-image: url('image/8.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+			margin-left: 50px;
+		}
+		.curtain-container-7 {
 			background-image: url('image/7.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+		}
+		.curtain-container-8 {
+			background-image: url('image/8.png');
+			background-size: 100%;
 			width: 1220px;
 			height: 620px;
 			position: relative;
