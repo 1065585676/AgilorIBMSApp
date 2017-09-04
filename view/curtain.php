@@ -60,7 +60,7 @@ $('#curtainControlView').on('show.bs.modal', function (e) {
 	// do something...
 	$('#myAlertCurtainControl').addClass('hidden');
 	slider.setValue(0);
-	$('input[name="my-checkbox"]').bootstrapSwitch('state', false);
+	$('input[name="my-checkbox"]').bootstrapSwitch('state', true);
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValue.php',
@@ -83,7 +83,7 @@ $('#curtainControlView').on('show.bs.modal', function (e) {
 		data: {targetName: $('#curtainControlViewLabelId').html() + '_OPENCLOSE'},
 		dataType: "json",
 		success: function(data){
-			$('input[name="my-checkbox"]').bootstrapSwitch('state', data.responseBody[0].Val != 0);
+			$('input[name="my-checkbox"]').bootstrapSwitch('state', data.responseBody[0].Val != 1);
 			$('.btn_setCurtainControl').prop('disabled', false);
 			console.log(data);
 		},
