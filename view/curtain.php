@@ -59,8 +59,8 @@ $("[name='my-checkbox']").bootstrapSwitch({
 $('#curtainControlView').on('show.bs.modal', function (e) {
 	// do something...
 	$('#myAlertCurtainControl').addClass('hidden');
-	slider.setValue(10);
-	$('input[name="my-checkbox"]').bootstrapSwitch('state', true);
+	slider.setValue(0);
+	$('input[name="my-checkbox"]').bootstrapSwitch('state', false);
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValue.php',
