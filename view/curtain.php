@@ -116,7 +116,7 @@ function setCurtainControlValue() {
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValue.php',
-		data: {targetName: $('#curtainControlViewLabelId').html() + '_OPENCLOSE', newValue: $('input[name="my-checkbox"]').bootstrapSwitch('state') + 0},
+		data: {targetName: $('#curtainControlViewLabelId').html() + '_OPENCLOSE', newValue: (1 - ($('input[name="my-checkbox"]').bootstrapSwitch('state') + 0))},
 		dataType: "json",
 		success: function(data){
 			console.log(data);
