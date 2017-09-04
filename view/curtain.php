@@ -47,10 +47,11 @@ var slider = new Slider("#ex_curtain", {
 
 $("[name='my-checkbox']").bootstrapSwitch({
 	state: false,
-	onColor: 'info',
-	offColor: 'danger',
-	offText: '关',
-	onText: '开',
+	onColor: "info",
+	offColor: "danger",
+	offText: "关",
+	onText: "开",
+	size:"large",
 });
 
 

@@ -3,8 +3,7 @@
 <head>
 	<title>Agilor IBMS App</title>
 	<!-- jquery && jquery ui -->
-	<script src="jQuery/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<script src="jquery-ui-1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="jQuery/jquery-3.2.1.js"></script>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.css">
@@ -21,7 +20,7 @@
 
 	<!-- bootstrap-switch -->
 	<link href="bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
-	<script src="bootstrap-switch-master/dist/js/bootstrap-switch.js"></script>
+	<script src="bootstrap-switch-master/dist/js/bootstrap-switch.min.js"></script>
 
 	<style type="text/css">
 		body {
@@ -78,6 +77,7 @@
 			height: 620px;
 			position: relative;
 		}
+		.bootstrap-switch-container{ white-space:nowrap; }
 	</style>
 
 </head>
