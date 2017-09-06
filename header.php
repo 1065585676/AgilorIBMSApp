@@ -27,7 +27,7 @@
 			background-color: #BABABA;
 		}
 		.gongweibtn{
-			width: 60px;
+			width: 64px;
 			height: 20px;
 			padding: 0 0 0 0;
 		}
