@@ -137,6 +137,34 @@
 		.bootstrap-switch-container{ white-space:nowrap; }
 	</style>
 
+	<script type="text/javascript">
+		function detectZoom (){
+			var ratio = 0,
+			screen = window.screen,
+			ua = navigator.userAgent.toLowerCase();
+			if (window.devicePixelRatio !== undefined) {
+				ratio = window.devicePixelRatio;
+			}
+			else if (~ua.indexOf('msie')) {
+				if (screen.deviceXDPI && screen.logicalXDPI) {
+					ratio = screen.deviceXDPI / screen.logicalXDPI;
+				}
+			}
+			else if (window.outerWidth !== undefined && window.innerWidth !== undefined) {
+				ratio = window.outerWidth / window.innerWidth;
+			}
+			if (ratio){
+				ratio = Math.round(ratio * 100);
+			}
+			return ratio;
+		};
+
+		window.onresize = function () {
+			if(detectZoom() != 100){
+				alert("检测到缩放：\n您好，对页面进行缩放浏览，会造成部分控件的布局异常！缩放后请刷新页面。");
+			}
+		}
+	</script>
 </head>
 <body>
 
