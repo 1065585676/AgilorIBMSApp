@@ -20,7 +20,7 @@
 
 	<!-- bootstrap-switch -->
 	<link href="bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
-	<script src="bootstrap-switch-master/dist/js/bootstrap-switch.min.js"></script>
+	<script src="bootstrap-switch-master/dist/js/bootstrap-switch.js"></script>
 
 	<style type="text/css">
 		body {
