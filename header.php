@@ -26,30 +26,71 @@
 		body {
 			background-color: #BABABA;
 		}
-		.gongweibtn{
+
+		.gongweibtnOn{
 			width: 64px;
 			height: 20px;
 			padding: 0 0 0 0;
+			background-color: #DEB887;
+		}
+		.gongweibtnOff{
+			width: 64px;
+			height: 20px;
+			padding: 0 0 0 0;
+			background-color: #808080;
 		}
 
-		.shangzhaodeng {
+		.ligOn {
 			width: 50px;
 			height: 50px;
 			padding: 0 0 0 0;
-			background-image: url('image/lighting.png');
+			background-image: url('image/LIG-ON.png');
 			border:0px;
 			background-size: 100% 100%;
 			background-color: rgba(255, 255, 255, 0);
-		}
 
-		.chuanglian{
+			color: white;
+			font-size: 12px;
+			padding-top: 34px;
+		}
+		.ligOff {
 			width: 50px;
 			height: 50px;
 			padding: 0 0 0 0;
-			background-image: url('image/curtain.png');
+			background-image: url('image/LIG-OFF.png');
 			border:0px;
 			background-size: 100% 100%;
 			background-color: rgba(255, 255, 255, 0);
+
+			color: #D2B48C;
+			font-size: 12px;
+			padding-top: 34px;
+		}
+		.curOn{
+			width: 50px;
+			height: 50px;
+			padding: 0 0 0 0;
+			background-image: url('image/CUR-ON.png');
+			border:0px;
+			background-size: 100% 100%;
+			background-color: rgba(255, 255, 255, 0);
+
+			color: white;
+			font-size: 12px;
+			padding-top: 34px;
+		}
+		.curOff{
+			width: 50px;
+			height: 50px;
+			padding: 0 0 0 0;
+			background-image: url('image/CUR-OFF.png');
+			border:0px;
+			background-size: 100% 100%;
+			background-color: rgba(255, 255, 255, 0);
+
+			color: #D2B48C;
+			font-size: 12px;
+			padding-top: 34px;
 		}
 
 		#mySlider {

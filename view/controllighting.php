@@ -46,7 +46,7 @@ $('#controllighting').on('show.bs.modal', function (e) {
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValue.php',
-		data: {targetName: $('#controllightingLabelId').html()},
+		data: {"targetName": $('#controllightingLabelId').html()},
 		dataType: "json",
 		success: function(data){
 			$('input[name="my-checkbox"]').bootstrapSwitch('state', data.responseBody[0].Val != 0);
