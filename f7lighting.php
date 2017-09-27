@@ -166,12 +166,12 @@
 		<button id="LIG_OTHER_706_W" class="ligOff" style="position: absolute; left: 864px; top: 550px;" data-toggle="modal" data-target="#singlelighting" onclick="$('#lightingLabelId').html('LIG_OTHER_706_W')">706西</button>
 
 		<!-- 北侧灯带和廊灯 -->
-		<button id="LIG_OTHER_F7_DENG_DAI_N" class="ligOff" style="position: absolute; left: 545px; top: 415px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_DENG_DAI_N')">南侧灯带</button>
-		<button id="LIG_OTHER_F7_LANG_DENG_N" class="ligOff" style="position: absolute; left: 625px; top: 415px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_LANG_DENG_N')">南侧廊灯</button>
+		<button id="LIG_OTHER_F7_DENG_DAI_N" class="ligOff" style="position: absolute; left: 545px; top: 415px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_DENG_DAI_N')">北侧灯带</button>
+		<button id="LIG_OTHER_F7_LANG_DENG_N" class="ligOff" style="position: absolute; left: 625px; top: 415px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_LANG_DENG_N')">北南侧廊灯</button>
 
 		<!-- 南侧灯带和廊灯 -->
-		<button id="LIG_OTHER_F7_DENG_DAI_S" class="ligOff" style="position: absolute; left: 545px; top: 165px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_DENG_DAI_S')">北侧灯带</button>
-		<button id="LIG_OTHER_F7_LANG_DENG_S" class="ligOff" style="position: absolute; left: 625px; top: 165px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_LANG_DENG_S')">北侧廊灯</button>
+		<button id="LIG_OTHER_F7_DENG_DAI_S" class="ligOff" style="position: absolute; left: 545px; top: 165px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_DENG_DAI_S')">南侧灯带</button>
+		<button id="LIG_OTHER_F7_LANG_DENG_S" class="ligOff" style="position: absolute; left: 625px; top: 165px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_LANG_DENG_S')">南侧廊灯</button>
 
 		<!-- 前台灯 -->
 		<button id="LIG_OTHER_F7_QIAN_TAI_DENG" class="ligOff" style="position: absolute; left: 585px; top: 105px;" data-toggle="modal" data-target="#controllighting" onclick="$('#controllightingLabelId').html('LIG_OTHER_F7_QIAN_TAI_DENG')">前台灯</button>
