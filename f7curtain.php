@@ -26,8 +26,8 @@
 		<button class="curOff" style="position: absolute; left: 5px; top: 500px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_9')">东-9</button>
 
 		<button class="curOff" style="position: absolute; left: 45px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_10')">东-10</button>
-		<button class="curOff" style="position: absolute; left: 135px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_11')">东-</button>
-		<button class="curOff" style="position: absolute; left: 225px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_12')">东-</button>
+		<button class="curOff" style="position: absolute; left: 135px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_11')">东-11</button>
+		<button class="curOff" style="position: absolute; left: 225px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_DONG_12')">东-12</button>
 
 		<button class="curOff" style="position: absolute; left: 330px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_SUOZHANGSHI_1')">所长室1</button>
 		<button class="curOff" style="position: absolute; left: 435px; top: 560px;" data-toggle="modal" data-target="#curtainControlView" onclick="$('#curtainControlViewLabelId').html('CUR_F7_HUIYISHI_1')">会议室1</button>
