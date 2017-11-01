@@ -141,6 +141,13 @@
 			height: 620px;
 			position: relative;
 		}
+		.f8-temphumco2-page-container {
+			background-image: url('image/8.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+		}
 		.bootstrap-switch-container{ white-space:nowrap; }
 	</style>
 

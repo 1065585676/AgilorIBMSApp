@@ -15,42 +15,346 @@
 <div class="f7-temphumco2-page-container">
 
 <div id="TEMPHUMCO2_F7_OPEN_DONG" style="position: absolute; left: 50px; top: 240px;width: 130px; height: 100px; background-color: rgb(198,122,15);">
-	<div style="width: 130px; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">东开敞办公区</div>
-	<table style="width: 130px;">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">东开敞办公区</div>
+	<table style="width: 100%;">
 		<tr>
-			<td align="right">温度：</td>
+			<td align="right">温度:</td>
 			<td id="TEMPHUMCO2_F7_OPEN_DONG_TEMP" align="center" style="color: white">23.5</td>
 			<td align="left">℃</td>
 		</tr>
 		<tr>
-			<td align="right">湿度：</td>
+			<td align="right">湿度:</td>
 			<td id="TEMPHUMCO2_F7_OPEN_DONG_HUM" align="center" style="color: white">23.6</td>
 			<td align="left">RH</td>
 		</tr>
 		<tr>
-			<td align="right">浓度：</td>
+			<td align="right">浓度:</td>
 			<td id="TEMPHUMCO2_F7_OPEN_DONG_CO2" align="center" style="color: white">1225</td>
 			<td align="left">ppm</td>
 		</tr>
 	</table>
 </div>
-
 <div id="TEMPHUMCO2_F7_OPEN_XI" style="position: absolute; left: 1040px; top: 240px;width: 130px; height: 100px; background-color: rgb(198,122,15);">
-	<div style="width: 130px; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">西开敞办公区</div>
-	<table style="width: 130px;">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">西开敞办公区</div>
+	<table style="width: 100%;">
 		<tr>
-			<td align="right">温度：</td>
-			<td align="center" style="color: white">23.5</td>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_OPEN_XI_TEMP" align="center" style="color: white">23.5</td>
 			<td align="left">℃</td>
 		</tr>
 		<tr>
-			<td align="right">湿度：</td>
-			<td align="center" style="color: white">23.6</td>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_OPEN_XI_HUM" align="center" style="color: white">23.6</td>
 			<td align="left">RH</td>
 		</tr>
 		<tr>
-			<td align="right">浓度：</td>
-			<td align="center" style="color: white">1225</td>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_OPEN_XI_CO2" align="center" style="color: white">1225</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+
+<div id="TEMPHUMCO2_F7_KUAIJISHI" style="position: absolute; left: 314px; top: 20px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">会计室</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_KUAIJISHI_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_KUAIJISHI_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_KUAIJISHI_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_YUANZHANGSHI1" style="position: absolute; left: 414px; top: 20px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">院长室-1</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI1_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI1_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI1_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_YUANZHANGSHI2" style="position: absolute; left: 514px; top: 20px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">院长室-2</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI2_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI2_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI2_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_YUANZHANGSHI3" style="position: absolute; left: 614px; top: 20px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">院长室-3</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI3_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI3_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI3_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_YUANZHANGSHI4" style="position: absolute; left: 714px; top: 20px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">院长室-4</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI4_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI4_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_YUANZHANGSHI4_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_BANGONGSHI" style="position: absolute; left: 814px; top: 20px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">办公室</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_BANGONGSHI_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_BANGONGSHI_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_BANGONGSHI_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+
+<div id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1" style="position: absolute; left: 411px; top: 120px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">洽谈室</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4" style="position: absolute; left: 709px; top: 120px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">洽谈室</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+
+<div id="TEMPHUMCO2_F7_SUOZHANGSHI1_1" style="position: absolute; left: 255px; top: 523px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">所长室1-1</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI1_1_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI1_1_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI1_1_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_SUOZHANGSHI1_2" style="position: absolute; left: 355px; top: 523px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">所长室1-2</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI1_2_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI1_2_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI1_2_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1" style="position: absolute; left: 307px; top: 428px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">洽谈室</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+
+<div id="TEMPHUMCO2_F7_HUIYISHI1" style="position: absolute; left: 411px; top: 428px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">会议室1</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_HUIYISHI1_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_HUIYISHI1_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_HUIYISHI1_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_HUIYISHI2" style="position: absolute; left: 708px; top: 428px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">会议室2</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_HUIYISHI2_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_HUIYISHI2_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_HUIYISHI2_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+
+<div id="TEMPHUMCO2_F7_SUOZHANGSHI2_1" style="position: absolute; left: 755px; top: 523px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">所长室2-1</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI2_1_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI2_1_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI2_1_CO2" align="center" style="color: white">1225.9</td>
+			<td align="left">ppm</td>
+		</tr>
+	</table>
+</div>
+<div id="TEMPHUMCO2_F7_SUOZHANGSHI2_2" style="position: absolute; left: 855px; top: 523px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
+	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">所长室2-2</div>
+	<table style="width: 100%; font-size: 12px">
+		<tr>
+			<td align="right">温度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI2_2_TEMP" align="center" style="color: white">23.5</td>
+			<td align="left">℃</td>
+		</tr>
+		<tr>
+			<td align="right">湿度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI2_2_HUM" align="center" style="color: white">23.6</td>
+			<td align="left">RH</td>
+		</tr>
+		<tr>
+			<td align="right">浓度:</td>
+			<td id="TEMPHUMCO2_F7_SUOZHANGSHI2_2_CO2" align="center" style="color: white">1225.9</td>
 			<td align="left">ppm</td>
 		</tr>
 	</table>
@@ -70,6 +374,66 @@ var temphumco2TargetsName = [
 	"TEMPHUMCO2_F7_OPEN_XI_HUM",
 	"TEMPHUMCO2_F7_OPEN_XI_TEMP",
 	"TEMPHUMCO2_F7_OPEN_XI_CO2",
+
+	"TEMPHUMCO2_F7_KUAIJISHI_HUM",
+	"TEMPHUMCO2_F7_KUAIJISHI_TEMP",
+	"TEMPHUMCO2_F7_KUAIJISHI_CO2",
+
+	"TEMPHUMCO2_F7_YUANZHANGSHI1_HUM",
+	"TEMPHUMCO2_F7_YUANZHANGSHI1_TEMP",
+	"TEMPHUMCO2_F7_YUANZHANGSHI1_CO2",
+
+	"TEMPHUMCO2_F7_YUANZHANGSHI2_HUM",
+	"TEMPHUMCO2_F7_YUANZHANGSHI2_TEMP",
+	"TEMPHUMCO2_F7_YUANZHANGSHI2_CO2",
+
+	"TEMPHUMCO2_F7_YUANZHANGSHI3_HUM",
+	"TEMPHUMCO2_F7_YUANZHANGSHI3_TEMP",
+	"TEMPHUMCO2_F7_YUANZHANGSHI3_CO2",
+
+	"TEMPHUMCO2_F7_YUANZHANGSHI4_HUM",
+	"TEMPHUMCO2_F7_YUANZHANGSHI4_TEMP",
+	"TEMPHUMCO2_F7_YUANZHANGSHI4_CO2",
+
+	"TEMPHUMCO2_F7_BANGONGSHI_HUM",
+	"TEMPHUMCO2_F7_BANGONGSHI_TEMP",
+	"TEMPHUMCO2_F7_BANGONGSHI_CO2",
+
+	"TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1_HUM",
+	"TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1_TEMP",
+	"TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI1_CO2",
+
+	"TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4_HUM",
+	"TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4_TEMP",
+	"TEMPHUMCO2_F7_QIATAN_YUANZHANGSHI4_CO2",
+
+	"TEMPHUMCO2_F7_SUOZHANGSHI1_1_HUM",
+	"TEMPHUMCO2_F7_SUOZHANGSHI1_1_TEMP",
+	"TEMPHUMCO2_F7_SUOZHANGSHI1_1_CO2",
+
+	"TEMPHUMCO2_F7_SUOZHANGSHI1_2_HUM",
+	"TEMPHUMCO2_F7_SUOZHANGSHI1_2_TEMP",
+	"TEMPHUMCO2_F7_SUOZHANGSHI1_2_CO2",
+
+	"TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1_HUM",
+	"TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1_TEMP",
+	"TEMPHUMCO2_F7_QIATAN_SUOZHANGSHI1_CO2",
+
+	"TEMPHUMCO2_F7_HUIYISHI1_HUM",
+	"TEMPHUMCO2_F7_HUIYISHI1_TEMP",
+	"TEMPHUMCO2_F7_HUIYISHI1_CO2",
+
+	"TEMPHUMCO2_F7_HUIYISHI2_HUM",
+	"TEMPHUMCO2_F7_HUIYISHI2_TEMP",
+	"TEMPHUMCO2_F7_HUIYISHI2_CO2",
+
+	"TEMPHUMCO2_F7_SUOZHANGSHI2_1_HUM",
+	"TEMPHUMCO2_F7_SUOZHANGSHI2_1_TEMP",
+	"TEMPHUMCO2_F7_SUOZHANGSHI2_1_CO2",
+
+	"TEMPHUMCO2_F7_SUOZHANGSHI2_2_HUM",
+	"TEMPHUMCO2_F7_SUOZHANGSHI2_2_TEMP",
+	"TEMPHUMCO2_F7_SUOZHANGSHI2_2_CO2",
 ]
 
 var subscribedTargetsName = [];
@@ -97,7 +461,7 @@ function startSubscribePoll(guid, isRefresh){
 						if (value != null) {
 							// handle response, value.Name, value.Val
 							console.log(value.Name + value.Val);
-							$("#" + value.Name).html(value.Val);
+							$("#" + value.Name).html(parseFloat(value.Val).toFixed(1));
 						}
 					});
 				} else {
