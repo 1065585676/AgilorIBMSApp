@@ -71,6 +71,13 @@ function setContorlLightingValue() {
 		dataType: "json",
 		success: function(data){
 			console.log(data);
+			if ($('input[name="my-checkbox"]').bootstrapSwitch('state') + 0 != 0) {
+				$("#" + $('#controllightingLabelId').html()).removeClass("ligOff");
+				$("#" + $('#controllightingLabelId').html()).addClass("ligOn");
+			} else {
+				$("#" + $('#controllightingLabelId').html()).removeClass("ligOn");
+				$("#" + $('#controllightingLabelId').html()).addClass("ligOff");
+			}
 			//alert("success");
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown){

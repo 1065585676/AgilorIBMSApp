@@ -68,6 +68,13 @@ function setSceneLightingValue() {
 		dataType: "json",
 		success: function(data){
 			console.log(data);
+			if (Str2Val($('.selectpicker').selectpicker('val')).indexOf("ALL_OFF") == -1) {
+				$("#" + $('#scenelightingLabelId').html()).removeClass("ligOff");
+				$("#" + $('#scenelightingLabelId').html()).addClass("ligOn");
+			} else {
+				$("#" + $('#scenelightingLabelId').html()).removeClass("ligOn");
+				$("#" + $('#scenelightingLabelId').html()).addClass("ligOff");
+			}
 			//alert("success");
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown){

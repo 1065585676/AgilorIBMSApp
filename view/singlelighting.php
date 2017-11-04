@@ -77,6 +77,24 @@ function setLightingValue() {
 		dataType: "json",
 		success: function(data){
 			console.log(data);
+			if ($.inArray($('#lightingLabelId').html(), gongweidengTargetsName) != -1) {
+				// gong wei deng
+				if (parseInt(slider.getValue() * 255 / 100) == 0) {
+					$('#' + $('#lightingLabelId').html()).removeClass("gongweibtnOn");
+					$('#' + $('#lightingLabelId').html()).addClass("gongweibtnOff");
+				} else {
+					$('#' + $('#lightingLabelId').html()).removeClass("gongweibtnOff");
+					$('#' + $('#lightingLabelId').html()).addClass("gongweibtnOn");
+				}
+			} else if ($.inArray($('#lightingLabelId').html(), singleTargetsName) != -1) {
+				if (parseInt(slider.getValue() * 255 / 100) == 0) {
+					$('#' + $('#lightingLabelId').html()).removeClass("ligOn");
+					$('#' + $('#lightingLabelId').html()).addClass("ligOff");
+				} else {
+					$('#' + $('#lightingLabelId').html()).removeClass("ligOff");
+					$('#' + $('#lightingLabelId').html()).addClass("ligOn");
+				}
+			}
 			//alert("success");
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown){
