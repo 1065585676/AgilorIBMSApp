@@ -1,14 +1,7 @@
 <?php include('header.php');?>
 
-
 <script type="text/javascript">
 	$(function(){
-		// body...
-		$('.f7Lig').removeClass('active');
-		$('.f8Lig').removeClass('active');
-		//$('.f7Cur').removeClass('active');
-		$('.f8Cur').removeClass('active');
-
 		$('.f7Cur').addClass('active');
 	})
 </script>

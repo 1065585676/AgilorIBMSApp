@@ -119,7 +119,7 @@
 			height: 620px;
 			position: relative;
 		}
-		.f7-temphumco2-page-container {
+		.f7-environment-container {
 			background-image: url('image/7.png');
 			background-size: 100%;
 			width: 1220px;
@@ -141,7 +141,7 @@
 			height: 620px;
 			position: relative;
 		}
-		.f8-temphumco2-page-container {
+		.f8-environment-container {
 			background-image: url('image/8.png');
 			background-size: 100%;
 			width: 1220px;
@@ -205,12 +205,12 @@
 				<li class="f8Lig"><a href="f8lighting.php">F8-灯光</a></li>
 				<li class="f7Cur"><a href="f7curtain.php">F7-窗帘</a></li>
 				<li class="f8Cur"><a href="f8curtain.php">F8-窗帘</a></li>
+				<li class="f7Env"><a href="f7environment.php">F7-环境</a></li>
+				<li class="f8Env"><a href="f8environment.php">F8-环境</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="systemConf.php">系统配置</a></li>
-						<li><a href="f7temphumco2.php">F7 温湿度 & CO2浓度</a></li>
-						<li><a href="f8temphumco2.php">F8 温湿度 & CO2浓度</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="#">Separated link</a></li>
 						<li role="separator" class="divider"></li>
