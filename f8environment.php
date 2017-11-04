@@ -124,6 +124,13 @@
 		</tr>
 	</table>
 </div>
+
+<div style="position: absolute; left: 410px; top: -5px; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 6px; padding-left: 5px;">
+	幕墙排风温度:
+	<label id="TEMPHUMCO2_F8_MUQIANGPAIFENG_TEMP"> -- </label>
+	℃
+</div>
+
 <div id="TEMPHUMCO2_F8_HUIYISHI4" style="position: absolute; left: 510px; top: 30px;width: 100px; height: 85px; background-color: rgb(198,122,15);">
 	<div style="width: 100%; height: 30px; color: white; background-color: rgb(114,66,10); padding-top: 5px;">会议室-4</div>
 	<table style="width: 100%; font-size: 12px">
@@ -418,6 +425,8 @@ var temphumco2TargetsName = [
 	"PM25_F8_DAHUIYISHI",
 	"PM25_F8_XIUXIANSHI",
 	"PM25_F8_SHIWAI",
+
+	"TEMPHUMCO2_F8_MUQIANGPAIFENG_TEMP",
 ]
 
 var subscribedTargetsName = [];
