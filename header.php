@@ -92,6 +92,32 @@
 			font-size: 12px;
 			padding-top: 34px;
 		}
+		.fcuOn{
+			width: 50px;
+			height: 50px;
+			padding: 0 0 0 0;
+			background-image: url('image/FCU-ON.png');
+			border:0px;
+			background-size: 100% 100%;
+			background-color: rgba(255, 255, 255, 0);
+
+			color: white;
+			font-size: 11px;
+			padding-top: 34px;
+		}
+		.fcuOff{
+			width: 50px;
+			height: 50px;
+			padding: 0 0 0 0;
+			background-image: url('image/FCU-OFF.png');
+			border:0px;
+			background-size: 100% 100%;
+			background-color: rgba(255, 255, 255, 0);
+
+			color: #D2B48C;
+			font-size: 11px;
+			padding-top: 34px;
+		}
 
 		#mySlider {
 			width: 80%;
