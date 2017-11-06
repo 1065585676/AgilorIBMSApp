@@ -19,12 +19,12 @@
 					<label id="curtainControlViewLabelId">Lighting Label</label>
 					<br>
 					<br>
-					<input type="checkbox" name="my-checkbox" checked>
+					<input type="checkbox" name="my-checkbox" onchange="setCurtainOpenCloseValue()">
 				</center>
 			</div>
 			<div class="modal-footer">
 				<button class="btn" data-dismiss="modal">取消</button>
-				<button class="btn btn-info btn_setCurtainControl" data-dismiss="modal" onclick="setCurtainControlValue()">设置</button>
+				<button class="btn btn-info btn_setFCUControl" data-dismiss="modal" onclick="setCurtainControlValue()">设置</button>
 			</div>
 		</div>
 	</div>
@@ -54,13 +54,13 @@ $("[name='my-checkbox']").bootstrapSwitch({
 	size:"large",
 });
 
-
+var flag = 1;
 // 模式对话框显示前
 $('#curtainControlView').on('show.bs.modal', function (e) {
 	// do something...
 	$('#myAlertCurtainControl').addClass('hidden');
-	slider.setValue(0);
-	$('input[name="my-checkbox"]').bootstrapSwitch('state', true);
+	//slider.setValue(0);
+	//$('input[name="my-checkbox"]').bootstrapSwitch('state', true);
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValue.php',
@@ -83,6 +83,7 @@ $('#curtainControlView').on('show.bs.modal', function (e) {
 		data: {targetName: $('#curtainControlViewLabelId').html() + '_OPENCLOSE'},
 		dataType: "json",
 		success: function(data){
+			flag = 1;
 			$('input[name="my-checkbox"]').bootstrapSwitch('state', data.responseBody[0].Val != 1);
 			$('.btn_setCurtainControl').prop('disabled', false);
 			console.log(data);
@@ -97,7 +98,6 @@ $('#curtainControlView').on('show.bs.modal', function (e) {
 
 // 设置
 function setCurtainControlValue() {
-	// body...
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValue.php',
@@ -113,6 +113,12 @@ function setCurtainControlValue() {
 			//alert('error');
 		}
 	});
+};
+function setCurtainOpenCloseValue() {
+	if (flag == 1) {
+		flag = 0;
+		return;
+	}
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValue.php',
@@ -128,5 +134,7 @@ function setCurtainControlValue() {
 			//alert('error');
 		}
 	});
-}
+
+};
+
 </script>
