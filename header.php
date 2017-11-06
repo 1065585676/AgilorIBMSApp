@@ -126,6 +126,14 @@
 			height: 620px;
 			position: relative;
 		}
+		.f7-fcu-container {
+			background-image: url('image/7.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+		}
+
 		.lighting-container-8 {
 			background-image: url('image/8.png');
 			background-size: 100%;
@@ -142,6 +150,13 @@
 			position: relative;
 		}
 		.f8-environment-container {
+			background-image: url('image/8.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+		}
+		.f8-fcu-container {
 			background-image: url('image/8.png');
 			background-size: 100%;
 			width: 1220px;
@@ -207,6 +222,8 @@
 				<li class="f8Cur"><a href="f8curtain.php">F8-窗帘</a></li>
 				<li class="f7Env"><a href="f7environment.php">F7-环境</a></li>
 				<li class="f8Env"><a href="f8environment.php">F8-环境</a></li>
+				<li class="f7Fcu"><a href="f7fcu.php">F7-空调</a></li>
+				<li class="f8Fcu"><a href="#f8fcu.php">F8-空调</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
 					<ul class="dropdown-menu">
