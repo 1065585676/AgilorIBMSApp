@@ -249,7 +249,7 @@
 				<li class="f7Env"><a href="f7environment.php">F7-环境</a></li>
 				<li class="f8Env"><a href="f8environment.php">F8-环境</a></li>
 				<li class="f7Fcu"><a href="f7fcu.php">F7-空调</a></li>
-				<li class="f8Fcu"><a href="#f8fcu.php">F8-空调</a></li>
+				<li class="f8Fcu"><a href="f8fcu.php">F8-空调</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
 					<ul class="dropdown-menu">
