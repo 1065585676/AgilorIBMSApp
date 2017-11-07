@@ -49,8 +49,30 @@
 		<button class="fcuOff" style="position: absolute; left: 950px; top: 498px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_15')">FCU7_15</button>
 		<button class="fcuOff" style="position: absolute; left: 1150px; top: 498px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_14')">FCU7_14</button>
 
+		<button class="fcuOff" style="position: absolute; left: 306px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_37')">FCU7_37</button>
+		<button class="fcuOff" style="position: absolute; left: 360px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_38')">FCU7_38</button>
 
+		<button class="fcuOff" style="position: absolute; left: 435px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_39')">FCU7_39</button>
+		<button class="fcuOff" style="position: absolute; left: 435px; top: 105px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_42')">FCU7_42</button>
 
+		<button class="fcuOff" style="position: absolute; left: 535px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_40')">FCU7_40</button>
+		<button class="fcuOff" style="position: absolute; left: 635px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_1')">FCU7_1</button>
+
+		<button class="fcuOff" style="position: absolute; left: 735px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_2')">FCU7_2</button>
+		<button class="fcuOff" style="position: absolute; left: 735px; top: 105px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_3')">FCU7_3</button>
+
+		<button class="fcuOff" style="position: absolute; left: 835px; top: 25px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_4')">FCU7_4</button>
+
+		<button class="fcuOff" style="position: absolute; left: 306px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_24')">FCU7_24</button>
+		<button class="fcuOff" style="position: absolute; left: 360px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_23')">FCU7_23</button>
+
+		<button class="fcuOff" style="position: absolute; left: 435px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_22')">FCU7_22</button>
+		<button class="fcuOff" style="position: absolute; left: 550px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_21')">FCU7_21</button>
+		<button class="fcuOff" style="position: absolute; left: 630px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_20')">FCU7_20</button>
+		<button class="fcuOff" style="position: absolute; left: 735px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_19')">FCU7_19</button>
+
+		<button class="fcuOff" style="position: absolute; left: 810px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_18')">FCU7_18</button>
+		<button class="fcuOff" style="position: absolute; left: 864px; top: 535px;" data-toggle="modal" data-target="#fcuControlView" onclick="$('#fcuControlViewLabelId').html('FCU_F7_7_17')">FCU7_17</button>
 
 
 	</div>
