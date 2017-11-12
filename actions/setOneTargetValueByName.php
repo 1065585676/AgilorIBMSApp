@@ -9,10 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 	$postUrl = "http://localhost:8098/AgilorReader/devices/" . $deviceName . "/" . $targetName;
 
-	if($targetType == "ENUM") {
-		$postUrl = $postUrl . "__" . $newValue;
-		$newValue = 1;
-	}
 	$postUrl = $postUrl . "/set/";
 	$data = array(
 		'targetValue' => $newValue
