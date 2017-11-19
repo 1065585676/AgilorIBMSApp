@@ -15,7 +15,12 @@
 					<table style="margin-top: 30px; width: 80%">
 						<tr>
 							<td style="text-align:center;vertical-align:middle"><label>当前温度</label></td>
-							<td style="height: 50px"><input id="my-fcu-slider"/></td>
+							<td style="height: 50px">
+								<label>
+									<span id="my-fcu-cur-temp" style="font-size: 18px; color: rgb(70,175,227);">23.6</span> ℃
+								</label>&nbsp;&nbsp;&nbsp;
+								<input id="my-fcu-slider" />
+							</td>
 						</tr>
 						<tr>
 							<td style="text-align:center;vertical-align:middle"><label>电子除尘</label></td>
@@ -58,7 +63,7 @@ var slider = new Slider("#my-fcu-slider", {
 	max: 40,
 	setp: 0.1,
 	value: 26,
-	enabled: false,
+	enabled: true,
 	formatter: function(value) {
 		return value + ' ℃';
 	}
@@ -86,14 +91,30 @@ var elecFlag = 1;
 var valveFlag = 1;
 // 模式对话框显示前
 $('#fcuControlView').on('show.bs.modal', function (e) {
-	// slider, temp
+	// cur temp
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValueByName.php',
 		data: {targetName: $('#fcuControlViewLabelId').html() + "_Temp", deviceName: "BACNET"},
 		dataType: "json",
 		success: function(data){
-			slider.setValue(data.responseBody[0].Val);
+			$("#my-fcu-cur-temp").html(data.responseBody[0].Val);
+			console.log(data);
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown){
+			$('#myAlertFCUControl').removeClass('hidden');
+			console.log('XMLHttpRequest.status:' + XMLHttpRequest.status + '\nXMLHttpRequest.readyState:' + XMLHttpRequest.readyState + '\ntextStatus:' + textStatus);
+		}
+	});
+
+	// last seted temp
+	$.ajax({
+		type:'get',
+		url: 'actions/getOneTargetValueByName.php',
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", deviceName: "BACNET"},
+		dataType: "json",
+		success: function(data){
+			slider.setValue(parseFloat(data.responseBody[0].Val).toFixed(2));
 			console.log(data);
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown){
@@ -199,6 +220,23 @@ function setValveValue() {
 	});
 }
 // Set Temp
+slider.on('slideStop', function (newValue) {
+	$.ajax({
+		type:'post',
+		url: 'actions/setOneTargetValueByName.php',
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", newValue: newValue, targetType: "Enum", deviceName: "BACNET"},
+		dataType: "json",
+		success: function(data){
+			console.log(data);
+			//alert("success");
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown){
+			console.log('XMLHttpRequest.status:' + XMLHttpRequest.status + '\nXMLHttpRequest.readyState:' + XMLHttpRequest.readyState + '\ntextStatus:' + textStatus);
+			$('#myAlertFCUControl').removeClass('hidden');
+			//alert('error');
+		}
+	});
+});
 
 // Set speed
 $('.my-fcu-selectpicker').on('changed.bs.select', function (e) {
