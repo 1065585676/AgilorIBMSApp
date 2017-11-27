@@ -98,7 +98,10 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 		data: {targetName: $('#fcuControlViewLabelId').html() + "_Temp", deviceName: "BACNET"},
 		dataType: "json",
 		success: function(data){
-			$("#my-fcu-cur-temp").html(data.responseBody[0].Val);
+			// y = 906 - 10 * x
+			// 692 = 906 - 10 * 21.4
+			convTemp = (906 - data.responseBody[0].Val) / 10.0;
+			$("#my-fcu-cur-temp").html(convTemp);
 			console.log(data);
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown){
@@ -114,7 +117,10 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", deviceName: "BACNET"},
 		dataType: "json",
 		success: function(data){
-			slider.setValue(parseFloat(data.responseBody[0].Val).toFixed(2));
+			// y = 906 - 10 * x
+			// 692 = 906 - 10 * 21.4
+			convTemp = (906 - parseFloat(data.responseBody[0].Val)) / 10.0;
+			slider.setValue(convTemp.toFixed(2));
 			console.log(data);
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown){
@@ -221,6 +227,9 @@ function setValveValue() {
 }
 // Set Temp
 slider.on('slideStop', function (newValue) {
+	// y = 906 - 10 * x
+	// 692 = 906 - 10 * 21.4
+	newValue = 906 - newValue * 10;
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValueByName.php',
