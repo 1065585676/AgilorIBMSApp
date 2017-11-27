@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="RuleDef.xsd" generated="2017-11-27T13:49:03">
+<RuleDef>
+<Name>FCU7_01FanAuto</Name>
+<Event>OnTimer(&quot;Timer.FCU7_01FanAuto_Tmr0&quot;,3)</Event>
+<Condition>true</Condition>
+<Action>string tagBaseName = &quot;Agilor.FCU_F7_7_1&quot;;
+string tagTempName, tagTempSetName;
+string tagFanSpeedHighName, tagFanSpeedMidName, tagFanSpeedLowName;
+string tagCoolValveCtrl;
+tagTempName = tagBaseName + &quot;_Temp&quot;;
+tagTempSetName = tagBaseName + &quot;_TempSet&quot;;
+tagFanSpeedHighName = tagBaseName + &quot;_FanSpeedHigh&quot;;
+tagFanSpeedMidName = tagBaseName + &quot;_FanSpeedMid&quot;;
+tagFanSpeedLowName = tagBaseName + &quot;_FanSpeedLow&quot;;
+tagCoolValveCtrl = tagBaseName + &quot;_CoolValveCtrl&quot;;
+
+float tempDiff = 0;
+tempDiff = ToFloat(TagVal(tagTempSetName)) - TagVal(tagTempName);
+float coolValve = 0;
+if(tempDiff &lt; 0){
+    coolValve = 0;
+    tempDiff = -1 * tempDiff;
+} else {
+    coolValve = 1;
+}
+string fanSpeed = &quot;FanSpeedClose&quot;;
+if(tempDiff &gt; 2 * FAN_AUTO_TEMP_DIFF){
+    fanSpeed = &quot;FanSpeedHigh&quot;;
+} else if(tempDiff &gt; 1 * FAN_AUTO_TEMP_DIFF){
+    fanSpeed = &quot;FanSpeedMid&quot;;
+} else if(tempDiff &gt; 0) {
+    fanSpeed = &quot;FanSpeedLow&quot;;
+}
+
+if(fanSpeed == &quot;FanSpeedHigh&quot; and TagVal(tagFanSpeedHighName) != 1){
+    if(TagVal(tagFanSpeedMidName) == 1){
+        SetTagVal(tagFanSpeedMidName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) == 1){
+        SetTagVal(tagFanSpeedLowName, 0, true);
+    }
+    SetTagVal(tagFanSpeedHighName, 1, true);
+} else if(fanSpeed == &quot;FanSpeedMid&quot; and TagVal(tagFanSpeedMidName) != 1){
+    if(TagVal(tagFanSpeedHighName) == 1){
+        SetTagVal(tagFanSpeedHighName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) == 1){
+        SetTagVal(tagFanSpeedLowName, 0, true);
+    }
+    SetTagVal(tagFanSpeedMidName, 1, true);
+} else if(fanSpeed == &quot;FanSpeedLow&quot; and TagVal(tagFanSpeedLowName) != 1){
+    if(TagVal(tagFanSpeedHighName) == 1){
+        SetTagVal(tagFanSpeedHighName, 0, true);
+    }
+    if(TagVal(tagFanSpeedMidName) == 1){
+        SetTagVal(tagFanSpeedMidName, 0, true);
+    }
+    SetTagVal(tagFanSpeedLowName, 1, true);
+} else if(fanSpeed == &quot;FanSpeedClose&quot;){
+    if(TagVal(tagFanSpeedHighName) == 1){
+        SetTagVal(tagFanSpeedHighName, 0, true);
+    }
+    if(TagVal(tagFanSpeedMidName) == 1){
+        SetTagVal(tagFanSpeedMidName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) == 1){
+        SetTagVal(tagFanSpeedLowName, 0, true);
+    }
+}
+
+if(TagVal(tagCoolValveCtrl) != coolValve){
+    SetTagVal(tagCoolValveCtrl, coolValve, true);
+}
+printf(&quot;Finish Auto Rule:&quot; + tagBaseName);</Action>
+<Description></Description>
+<Valid>0</Valid>
+<AutoLoad>1</AutoLoad>
+</RuleDef>
+<RuleDef>
+<Name>FCU7_01Change</Name>
+<Event>OnChange(&quot;Agilor.FCU_F7_7_1_FanSpeedLow&quot;) or OnChange(&quot;Agilor.FCU_F7_7_1_FanSpeed&quot;) or OnChange(&quot;Agilor.FCU_F7_7_1_FanSpeedMid&quot;) or OnChange(&quot;Agilor.FCU_F7_7_1_FanSpeedHigh&quot;)</Event>
+<Condition>true</Condition>
+<Action>string tagBaseName = &quot;Agilor.FCU_F7_7_1&quot;;
+string autoRuleName = &quot;FCU7_01FanAuto&quot;;
+string tagFanSpeedName, tagFanSpeedHighName, tagFanSpeedMidName, tagFanSpeedLowName;
+tagFanSpeedName = tagBaseName + &quot;_FanSpeed&quot;;
+tagFanSpeedHighName = tagBaseName + &quot;_FanSpeedHigh&quot;;
+tagFanSpeedMidName = tagBaseName + &quot;_FanSpeedMid&quot;;
+tagFanSpeedLowName = tagBaseName + &quot;_FanSpeedLow&quot;;
+
+string eventSourceName;
+eventSourceName = EventSourceName();
+if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 and TagVal(tagFanSpeedName) != &quot;FanSpeedAuto&quot;){
+    SetTagVal(tagFanSpeedName, &quot;FanSpeedHigh&quot;, false);
+} else if(eventSourceName == tagFanSpeedLowName and TagVal(tagFanSpeedLowName) == 1 and TagVal(tagFanSpeedName) != &quot;FanSpeedAuto&quot;){
+    SetTagVal(tagFanSpeedName, &quot;FanSpeedLow&quot;, false);
+} else if(eventSourceName == tagFanSpeedMidName and TagVal(tagFanSpeedMidName) == 1 and TagVal(tagFanSpeedName) != &quot;FanSpeedAuto&quot;){
+    SetTagVal(tagFanSpeedName, &quot;FanSpeedMid&quot;, false);
+} else if(eventSourceName == tagFanSpeedName and TagVal(tagFanSpeedName) == &quot;FanSpeedHigh&quot;){
+    DisableRule(autoRuleName);
+    if(TagVal(tagFanSpeedMidName) == 1){
+        SetTagVal(tagFanSpeedMidName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) == 1){
+        SetTagVal(tagFanSpeedLowName, 0, true);
+    }
+    if(TagVal(tagFanSpeedHighName) != 1){
+        SetTagVal(tagFanSpeedHighName, 1, true);
+    }
+} else if(eventSourceName == tagFanSpeedName and TagVal(tagFanSpeedName) == &quot;FanSpeedMid&quot;){
+    DisableRule(autoRuleName);
+    if(TagVal(tagFanSpeedHighName) == 1){
+        SetTagVal(tagFanSpeedHighName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) == 1){
+        SetTagVal(tagFanSpeedLowName, 0, true);
+    }
+    if(TagVal(tagFanSpeedMidName) != 1){
+        SetTagVal(tagFanSpeedMidName, 1, true);
+    }
+} else if(eventSourceName == tagFanSpeedName and TagVal(tagFanSpeedName) == &quot;FanSpeedLow&quot;){
+    DisableRule(autoRuleName);
+    if(TagVal(tagFanSpeedHighName) == 1){
+        SetTagVal(tagFanSpeedHighName, 0, true);
+    }
+    if(TagVal(tagFanSpeedMidName) == 1){
+        SetTagVal(tagFanSpeedMidName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) != 1){
+        SetTagVal(tagFanSpeedLowName, 1, true);
+    }
+} else if(eventSourceName == tagFanSpeedName and TagVal(tagFanSpeedName) == &quot;FanSpeedClose&quot;){
+    DisableRule(autoRuleName);
+    if(TagVal(tagFanSpeedHighName) == 1){
+        SetTagVal(tagFanSpeedHighName, 0, true);
+    }
+    if(TagVal(tagFanSpeedMidName) == 1){
+        SetTagVal(tagFanSpeedMidName, 0, true);
+    }
+    if(TagVal(tagFanSpeedLowName) == 1){
+        SetTagVal(tagFanSpeedLowName, 0, true);
+    }
+} else if(eventSourceName == tagFanSpeedName and TagVal(tagFanSpeedName) == &quot;FanSpeedAuto&quot;){
+    EnableRule(autoRuleName);
+} else if(eventSourceName == tagFanSpeedName){
+    printf(&quot;Error: &quot; + tagBaseName + &quot; FanSpeed Value(&quot; + TagVal(tagFanSpeedName) + &quot;) Error!&quot;);
+    SetTagVal(tagFanSpeedName, &quot;FanSpeedClose&quot;, false);
+}</Action>
+<Description></Description>
+<Valid>1</Valid>
+<AutoLoad>1</AutoLoad>
+</RuleDef>
+</dataroot>
