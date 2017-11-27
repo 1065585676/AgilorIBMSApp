@@ -98,9 +98,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 		data: {targetName: $('#fcuControlViewLabelId').html() + "_Temp", deviceName: "BACNET"},
 		dataType: "json",
 		success: function(data){
-			// y = 906 - 10 * x
-			// 692 = 906 - 10 * 21.4
-			convTemp = (906 - data.responseBody[0].Val) / 10.0;
+			var convTemp = TempConvert(data.responseBody[0].Val, true);
 			$("#my-fcu-cur-temp").html(convTemp);
 			console.log(data);
 		},
@@ -117,9 +115,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", deviceName: "BACNET"},
 		dataType: "json",
 		success: function(data){
-			// y = 906 - 10 * x
-			// 692 = 906 - 10 * 21.4
-			convTemp = (906 - parseFloat(data.responseBody[0].Val)) / 10.0;
+			var convTemp = TempConvert(parseFloat(data.responseBody[0].Val), true);
 			slider.setValue(convTemp.toFixed(2));
 			console.log(data);
 		},
@@ -227,9 +223,7 @@ function setValveValue() {
 }
 // Set Temp
 slider.on('slideStop', function (newValue) {
-	// y = 906 - 10 * x
-	// 692 = 906 - 10 * 21.4
-	newValue = 906 - newValue * 10;
+	newValue = TempConvert(newValue, false);
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValueByName.php',
@@ -312,5 +306,16 @@ function Val2Str(val) {
 		return '关闭';
 	}
 	return '自动';
+}
+function TempConvert(temp, isUp){
+	// y = 906 - 10 * x
+	// 692 = 906 - 10 * 21.4
+	var convTemp = 0;
+	if (isUp) {
+		convTemp = (906 - temp) / 10.0;
+	} else {
+		convTemp = 906 - temp * 10;
+	}
+	return convTemp;
 }
 </script>
