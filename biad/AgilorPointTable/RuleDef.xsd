@@ -14,7 +14,7 @@
 <od:index index-name="PrimaryKey" index-key="Name " primary="yes" unique="yes" clustered="no" order="asc"/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACtX6GqaiFzS6XmWuxgfwmpAAAAAFRbTYBL/uJAAAAAAAAAAABSAHUA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACtX6GqaiFzS6XmWuxgfwmpAAAAAJOqY+lTB+VAAAAAAAAAAABSAHUA
 bABlAEQAZQBmAAAAAAAAAJlaKqLJ2ZpDnBD1T4mVWcQHAAAArV+hqmohc0ul5lrs
 YH8JqU4AYQBtAGUAAAAAAAAAu66PVXnpA06QspNuzQzoiQcAAACtX6GqaiFzS6Xm
 WuxgfwmpRQB2AGUAbgB0AAAAAAAAAHHTJtszq95LqNK4aSR6i1YHAAAArV+hqmoh
@@ -22,13 +22,26 @@ c0ul5lrsYH8JqUMAbwBuAGQAaQB0AGkAbwBuAAAAAAAAALpRhn/uRUFAikpRyP13
 oxUHAAAArV+hqmohc0ul5lrsYH8JqUEAYwB0AGkAbwBuAAAAAAAAAN6Nx1L0DY9D
 nmH86hoVDvoHAAAArV+hqmohc0ul5lrsYH8JqUQAZQBzAGMAcgBpAHAAdABpAG8A
 bgAAAAAAAAA32ERfhMOySrjAxb3sYvExBwAAAK1foapqIXNLpeZa7GB/CalWAGEA
-bABpAGQAAAAAAAAAPM0p45hIGkmr7UImSlynrgcAAACtX6GqaiFzS6XmWuxgfwmp
-QQB1AHQAbwBMAG8AYQBkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAgAAAAAA
+bABpAGQAAAAAAAAAzw/mwGFa70WJ4/KIDYdf5gcAAACtX6GqaiFzS6XmWuxgfwmp
+QQB1AHQAbwBMAG8AYQBkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAABQAAAAAA
 AAAAAAAAAAAAAAAA
 "/>
 <od:tableProperty name="DefaultView" type="2" value="2"/>
 <od:tableProperty name="GUID" type="9" value="rV+hqmohc0ul5lrsYH8JqQ==
 "/>
+<od:tableProperty name="DisplayViewsOnSharePointSite" type="2" value="1"/>
+<od:tableProperty name="TotalsRow" type="1" value="0"/>
+<od:tableProperty name="FilterOnLoad" type="1" value="0"/>
+<od:tableProperty name="OrderByOnLoad" type="1" value="1"/>
+<od:tableProperty name="HideNewField" type="1" value="0"/>
+<od:tableProperty name="BackTint" type="6" value="100"/>
+<od:tableProperty name="BackShade" type="6" value="100"/>
+<od:tableProperty name="ThemeFontIndex" type="4" value="-1"/>
+<od:tableProperty name="AlternateBackThemeColorIndex" type="4" value="-1"/>
+<od:tableProperty name="AlternateBackTint" type="6" value="100"/>
+<od:tableProperty name="AlternateBackShade" type="6" value="100"/>
+<od:tableProperty name="DatasheetGridlinesThemeColorIndex" type="4" value="-1"/>
+<od:tableProperty name="DatasheetForeThemeColorIndex" type="4" value="-1"/>
 </xsd:appinfo>
 </xsd:annotation>
 <xsd:complexType>
@@ -36,8 +49,8 @@ AAAAAAAAAAAAAAAA
 <xsd:element name="Name" minOccurs="1" od:jetType="text" od:sqlSType="nvarchar" od:nonNullable="yes">
 <xsd:annotation>
 <xsd:appinfo>
-<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="1980"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="1"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Required" type="1" value="1"/>
 <od:fieldProperty name="AllowZeroLength" type="1" value="0"/>
@@ -47,6 +60,9 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
 <od:fieldProperty name="GUID" type="9" value="mVoqosnZmkOcEPVPiZVZxA==
 "/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 <xsd:simpleType>
@@ -68,6 +84,9 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
 <od:fieldProperty name="GUID" type="9" value="u66PVXnpA06QspNuzQzoiQ==
 "/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 <xsd:simpleType>
@@ -89,6 +108,9 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
 <od:fieldProperty name="GUID" type="9" value="cdMm2zOr3kuo0rhpJHqLVg==
 "/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 <xsd:simpleType>
@@ -110,6 +132,9 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
 <od:fieldProperty name="GUID" type="9" value="ulGGf+5FQUCKSlHI/XejFQ==
 "/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 <xsd:simpleType>
@@ -132,6 +157,9 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
 <od:fieldProperty name="GUID" type="9" value="3o3HUvQNj0OeYfzqGhUO+g==
 "/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 <xsd:simpleType>
@@ -148,10 +176,13 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Format" type="10" value="Yes/No"/>
 <od:fieldProperty name="DefaultValue" type="12" value="True"/>
-<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="1"/>
 <od:fieldProperty name="DisplayControl" type="3" value="106"/>
 <od:fieldProperty name="GUID" type="9" value="N9hEX4TDskq4wMW97GLxMQ==
 "/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
@@ -162,9 +193,14 @@ AAAAAAAAAAAAAAAA
 <od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Format" type="10" value="Yes/No"/>
-<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="1"/>
 <od:fieldProperty name="DisplayControl" type="3" value="106"/>
 <od:fieldProperty name="DefaultValue" type="12" value="True"/>
+<od:fieldProperty name="GUID" type="9" value="zw/mwGFa70WJ4/KIDYdf5g==
+"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
