@@ -39,7 +39,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td style="text-align:center;vertical-align:middle"><label>水阀开关</label></td>
+							<td style="text-align:center;vertical-align:middle"><label>冷热模式</label></td>
 							<td style="height: 50px"><input type="checkbox" name="my-fcu-checkbox-valve" onchange="setValveValue()"></td>
 						</tr>
 					</table>
@@ -82,8 +82,8 @@ $("[name='my-fcu-checkbox-valve']").bootstrapSwitch({
 	state: false,
 	onColor: "info",
 	offColor: "danger",
-	offText: "关",
-	onText: "开",
+	offText: "热",
+	onText: "冷",
 	size:"large",
 });
 

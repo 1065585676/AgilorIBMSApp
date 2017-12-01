@@ -13,12 +13,15 @@
 						<button type="button" class="close" onclick="$('#myAlertSingle').addClass('hidden');" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<strong>错误!</strong> 获取值异常，请检查网络连接或<a href=""> 联系维护人员 </a>.
 					</div>
-					<br>
-					<br>
-					<input id="ex_lighting" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
-					<br>
-					<br>
 					<label id="lightingLabelId">Lighting Label</label>
+					<table style="margin-top: 30px; width: 80%">
+						<tr>
+							<td style="width:30%;text-align:center;vertical-align:middle"><label>亮度百分比</label></td>
+							<td style="width:50%;height:50px">
+								<input id="ex_lighting" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+							</td>
+						</tr>
+					</table>
 				</center>
 			</div>
 			<div class="modal-footer">
