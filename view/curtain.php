@@ -12,14 +12,21 @@
 						<button type="button" class="close" onclick="$('#myAlertCurtainControl').addClass('hidden');" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<strong>错误!</strong> 获取值异常，请检查网络连接或<a href=""> 联系维护人员 </a>.
 					</div>
-					<br>
-					<input id="ex_curtain" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
-					<br>
-					<br>
 					<label id="curtainControlViewLabelId">Lighting Label</label>
-					<br>
-					<br>
-					<input type="checkbox" name="my-checkbox" onchange="setCurtainOpenCloseValue()">
+					<table style="margin-top: 30px; width: 80%">
+						<tr>
+							<td style="text-align:center;vertical-align:middle"><label>升降高度</label></td>
+							<td style="height:50px">
+								<input id="ex_curtain" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;vertical-align:middle"><label>百叶开关</label></td>
+							<td style="height:50px">
+								<input type="checkbox" name="my-checkbox" onchange="setCurtainOpenCloseValue()">
+							</td>
+						</tr>
+					</table>
 				</center>
 			</div>
 			<div class="modal-footer">
