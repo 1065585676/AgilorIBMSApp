@@ -2,7 +2,7 @@
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="RuleDef.xsd" generated="2017-11-27T15:16:01">
 <RuleDef>
 <Name>FCU_F8_8_1Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_1Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_1Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_1&quot;;
 string tagTempName, tagTempSetName;
@@ -153,7 +153,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_2Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_2Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_2Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_2&quot;;
 string tagTempName, tagTempSetName;
@@ -304,7 +304,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_3Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_3Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_3Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_3&quot;;
 string tagTempName, tagTempSetName;
@@ -455,7 +455,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_4Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_4Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_4Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_4&quot;;
 string tagTempName, tagTempSetName;
@@ -606,7 +606,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_5Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_5Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_5Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_5&quot;;
 string tagTempName, tagTempSetName;
@@ -757,7 +757,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_6Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_6Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_6Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_6&quot;;
 string tagTempName, tagTempSetName;
@@ -908,7 +908,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_7Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_7Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_7Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_7&quot;;
 string tagTempName, tagTempSetName;
@@ -1059,7 +1059,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_8Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_8Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_8Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_8&quot;;
 string tagTempName, tagTempSetName;
@@ -1210,7 +1210,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_9Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_9Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_9Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_9&quot;;
 string tagTempName, tagTempSetName;
@@ -1361,7 +1361,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_10Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_10Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_10Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_10&quot;;
 string tagTempName, tagTempSetName;
@@ -1512,7 +1512,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_11Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_11Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_11Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_11&quot;;
 string tagTempName, tagTempSetName;
@@ -1663,7 +1663,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_12Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_12Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_12Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_12&quot;;
 string tagTempName, tagTempSetName;
@@ -1814,7 +1814,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_13Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_13Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_13Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_13&quot;;
 string tagTempName, tagTempSetName;
@@ -1965,7 +1965,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_14Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_14Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_14Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_14&quot;;
 string tagTempName, tagTempSetName;
@@ -2116,7 +2116,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_15Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_15Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_15Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_15&quot;;
 string tagTempName, tagTempSetName;
@@ -2267,7 +2267,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_16Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_16Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_16Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_16&quot;;
 string tagTempName, tagTempSetName;
@@ -2418,7 +2418,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_17Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_17Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_17Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_17&quot;;
 string tagTempName, tagTempSetName;
@@ -2569,7 +2569,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_18Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_18Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_18Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_18&quot;;
 string tagTempName, tagTempSetName;
@@ -2720,7 +2720,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_19Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_19Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_19Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_19&quot;;
 string tagTempName, tagTempSetName;
@@ -2871,7 +2871,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_20Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_20Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_20Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_20&quot;;
 string tagTempName, tagTempSetName;
@@ -3022,7 +3022,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_21Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_21Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_21Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_21&quot;;
 string tagTempName, tagTempSetName;
@@ -3173,7 +3173,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_22Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_22Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_22Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_22&quot;;
 string tagTempName, tagTempSetName;
@@ -3324,7 +3324,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_23Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_23Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_23Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_23&quot;;
 string tagTempName, tagTempSetName;
@@ -3475,7 +3475,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_24Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_24Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_24Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_24&quot;;
 string tagTempName, tagTempSetName;
@@ -3626,7 +3626,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_25Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_25Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_25Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_25&quot;;
 string tagTempName, tagTempSetName;
@@ -3777,7 +3777,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_26Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_26Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_26Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_26&quot;;
 string tagTempName, tagTempSetName;
@@ -3928,7 +3928,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_27Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_27Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_27Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_27&quot;;
 string tagTempName, tagTempSetName;
@@ -4079,7 +4079,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_28Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_28Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_28Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_28&quot;;
 string tagTempName, tagTempSetName;
@@ -4230,7 +4230,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_29Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_29Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_29Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_29&quot;;
 string tagTempName, tagTempSetName;
@@ -4381,7 +4381,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_30Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_30Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_30Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_30&quot;;
 string tagTempName, tagTempSetName;
@@ -4532,7 +4532,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_31Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_31Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_31Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_31&quot;;
 string tagTempName, tagTempSetName;
@@ -4683,7 +4683,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_32Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_32Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_32Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_32&quot;;
 string tagTempName, tagTempSetName;
@@ -4834,7 +4834,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_33Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_33Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_33Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_33&quot;;
 string tagTempName, tagTempSetName;
@@ -4985,7 +4985,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_34Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_34Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_34Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_34&quot;;
 string tagTempName, tagTempSetName;
@@ -5136,7 +5136,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_35Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_35Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_35Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_35&quot;;
 string tagTempName, tagTempSetName;
@@ -5287,7 +5287,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_36Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_36Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_36Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_36&quot;;
 string tagTempName, tagTempSetName;
@@ -5438,7 +5438,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_37Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_37Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_37Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_37&quot;;
 string tagTempName, tagTempSetName;
@@ -5589,7 +5589,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_38Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_38Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_38Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_38&quot;;
 string tagTempName, tagTempSetName;
@@ -5740,7 +5740,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_39Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_39Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_39Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_39&quot;;
 string tagTempName, tagTempSetName;
@@ -5891,7 +5891,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_40Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_40Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_40Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_40&quot;;
 string tagTempName, tagTempSetName;
@@ -6042,7 +6042,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_41Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_41Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_41Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_41&quot;;
 string tagTempName, tagTempSetName;
@@ -6193,7 +6193,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F8_8_42Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F8_8_42Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F8_8_42Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F8_8_42&quot;;
 string tagTempName, tagTempSetName;
@@ -6344,7 +6344,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_1Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_1Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_1Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_1&quot;;
 string tagTempName, tagTempSetName;
@@ -6495,7 +6495,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_2Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_2Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_2Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_2&quot;;
 string tagTempName, tagTempSetName;
@@ -6646,7 +6646,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_3Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_3Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_3Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_3&quot;;
 string tagTempName, tagTempSetName;
@@ -6797,7 +6797,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_4Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_4Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_4Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_4&quot;;
 string tagTempName, tagTempSetName;
@@ -6948,7 +6948,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_5Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_5Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_5Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_5&quot;;
 string tagTempName, tagTempSetName;
@@ -7099,7 +7099,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_6Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_6Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_6Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_6&quot;;
 string tagTempName, tagTempSetName;
@@ -7250,7 +7250,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_7Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_7Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_7Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_7&quot;;
 string tagTempName, tagTempSetName;
@@ -7401,7 +7401,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_8Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_8Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_8Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_8&quot;;
 string tagTempName, tagTempSetName;
@@ -7552,7 +7552,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_9Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_9Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_9Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_9&quot;;
 string tagTempName, tagTempSetName;
@@ -7703,7 +7703,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_10Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_10Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_10Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_10&quot;;
 string tagTempName, tagTempSetName;
@@ -7854,7 +7854,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_11Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_11Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_11Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_11&quot;;
 string tagTempName, tagTempSetName;
@@ -8005,7 +8005,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_12Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_12Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_12Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_12&quot;;
 string tagTempName, tagTempSetName;
@@ -8156,7 +8156,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_13Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_13Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_13Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_13&quot;;
 string tagTempName, tagTempSetName;
@@ -8307,7 +8307,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_14Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_14Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_14Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_14&quot;;
 string tagTempName, tagTempSetName;
@@ -8458,7 +8458,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_15Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_15Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_15Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_15&quot;;
 string tagTempName, tagTempSetName;
@@ -8609,7 +8609,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_16Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_16Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_16Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_16&quot;;
 string tagTempName, tagTempSetName;
@@ -8760,7 +8760,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_17Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_17Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_17Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_17&quot;;
 string tagTempName, tagTempSetName;
@@ -8911,7 +8911,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_18Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_18Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_18Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_18&quot;;
 string tagTempName, tagTempSetName;
@@ -9062,7 +9062,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_19Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_19Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_19Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_19&quot;;
 string tagTempName, tagTempSetName;
@@ -9213,7 +9213,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_20Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_20Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_20Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_20&quot;;
 string tagTempName, tagTempSetName;
@@ -9364,7 +9364,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_21Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_21Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_21Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_21&quot;;
 string tagTempName, tagTempSetName;
@@ -9515,7 +9515,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_22Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_22Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_22Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_22&quot;;
 string tagTempName, tagTempSetName;
@@ -9666,7 +9666,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_23Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_23Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_23Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_23&quot;;
 string tagTempName, tagTempSetName;
@@ -9817,7 +9817,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_24Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_24Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_24Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_24&quot;;
 string tagTempName, tagTempSetName;
@@ -9968,7 +9968,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_25Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_25Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_25Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_25&quot;;
 string tagTempName, tagTempSetName;
@@ -10119,7 +10119,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_26Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_26Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_26Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_26&quot;;
 string tagTempName, tagTempSetName;
@@ -10270,7 +10270,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_27Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_27Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_27Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_27&quot;;
 string tagTempName, tagTempSetName;
@@ -10421,7 +10421,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_28Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_28Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_28Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_28&quot;;
 string tagTempName, tagTempSetName;
@@ -10572,7 +10572,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_29Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_29Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_29Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_29&quot;;
 string tagTempName, tagTempSetName;
@@ -10723,7 +10723,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_30Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_30Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_30Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_30&quot;;
 string tagTempName, tagTempSetName;
@@ -10874,7 +10874,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_31Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_31Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_31Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_31&quot;;
 string tagTempName, tagTempSetName;
@@ -11025,7 +11025,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_32Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_32Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_32Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_32&quot;;
 string tagTempName, tagTempSetName;
@@ -11176,7 +11176,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_33Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_33Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_33Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_33&quot;;
 string tagTempName, tagTempSetName;
@@ -11327,7 +11327,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_34Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_34Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_34Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_34&quot;;
 string tagTempName, tagTempSetName;
@@ -11478,7 +11478,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_35Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_35Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_35Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_35&quot;;
 string tagTempName, tagTempSetName;
@@ -11629,7 +11629,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_36Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_36Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_36Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_36&quot;;
 string tagTempName, tagTempSetName;
@@ -11780,7 +11780,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_37Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_37Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_37Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_37&quot;;
 string tagTempName, tagTempSetName;
@@ -11931,7 +11931,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_38Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_38Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_38Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_38&quot;;
 string tagTempName, tagTempSetName;
@@ -12082,7 +12082,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_39Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_39Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_39Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_39&quot;;
 string tagTempName, tagTempSetName;
@@ -12233,7 +12233,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_40Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_40Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_40Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_40&quot;;
 string tagTempName, tagTempSetName;
@@ -12384,7 +12384,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_41Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_41Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_41Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_41&quot;;
 string tagTempName, tagTempSetName;
@@ -12535,7 +12535,7 @@ if(eventSourceName == tagFanSpeedHighName and TagVal(tagFanSpeedHighName) == 1 a
 </RuleDef>
 <RuleDef>
 <Name>FCU_F7_7_42Auto</Name>
-<Event>OnTimer(&quot;Timer.FCU_F7_7_42Auto_Tmr0&quot;,3)</Event>
+<Event>OnTimer(&quot;Timer.FCU_F7_7_42Auto_Tmr0&quot;,60)</Event>
 <Condition>true</Condition>
 <Action>string tagBaseName = &quot;Agilor.FCU_F7_7_42&quot;;
 string tagTempName, tagTempSetName;
