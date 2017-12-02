@@ -12,6 +12,7 @@
 						<strong>错误!</strong> 获取值异常，请检查网络连接或<a href=""> 联系维护人员 </a>.
 					</div>
 					<label id="fcuControlViewLabelId">FCU Label</label>
+					<label id="fcuControlViewLabelDeviceName" class="hidden">FCU Label</label>
 					<table style="margin-top: 30px; width: 80%">
 						<tr>
 							<td style="text-align:center;vertical-align:middle"><label>当前温度</label></td>
@@ -95,7 +96,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + "_Temp", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_Temp", deviceName: $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			var convTemp = TempConvert(data.responseBody[0].Val, true);
@@ -112,7 +113,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", deviceName:  $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			var convTemp = TempConvert(parseFloat(data.responseBody[0].Val), true);
@@ -129,7 +130,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + '_ElecAirCleanerCtrl1', deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + '_ElecAirCleanerCtrl1', deviceName:  $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			elecFlag = 1;
@@ -146,7 +147,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + "_FanSpeed", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_FanSpeed", deviceName:  $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			$('.selectpicker').selectpicker('val', Val2Str(data.responseBody[0].Val));
@@ -162,7 +163,7 @@ $('#fcuControlView').on('show.bs.modal', function (e) {
 	$.ajax({
 		type:'get',
 		url: 'actions/getOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + '_CoolValveCtrl', deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + '_CoolValveCtrl', deviceName:  $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			valveFlag = 1;
@@ -186,7 +187,7 @@ function setElecValue() {
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + '_ElecAirCleanerCtrl1', newValue: $('input[name="my-fcu-checkbox-elec"]').bootstrapSwitch('state') + 0, targetType: "Control", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + '_ElecAirCleanerCtrl1', newValue: $('input[name="my-fcu-checkbox-elec"]').bootstrapSwitch('state') + 0, targetType: "Control", deviceName: $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			console.log(data);
@@ -208,7 +209,7 @@ function setValveValue() {
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + '_CoolValveCtrl', newValue: $('input[name="my-fcu-checkbox-valve"]').bootstrapSwitch('state') + 0, targetType: "Control", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + '_CoolValveCtrl', newValue: $('input[name="my-fcu-checkbox-valve"]').bootstrapSwitch('state') + 0, targetType: "Control", deviceName: $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			console.log(data);
@@ -227,7 +228,7 @@ slider.on('slideStop', function (newValue) {
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", newValue: newValue, targetType: "Enum", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_TempSet", newValue: newValue, targetType: "Enum", deviceName: $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			console.log(data);
@@ -246,7 +247,7 @@ $('.my-fcu-selectpicker').on('changed.bs.select', function (e) {
 	$.ajax({
 		type:'post',
 		url: 'actions/setOneTargetValueByName.php',
-		data: {targetName: $('#fcuControlViewLabelId').html() + "_FanSpeed", newValue: Str2Val($('.my-fcu-selectpicker').selectpicker('val')), targetType: "Enum", deviceName: "BACNET"},
+		data: {targetName: $('#fcuControlViewLabelId').html() + "_FanSpeed", newValue: Str2Val($('.my-fcu-selectpicker').selectpicker('val')), targetType: "Enum", deviceName: $('#fcuControlViewLabelDeviceName').html()},
 		dataType: "json",
 		success: function(data){
 			console.log(data);
