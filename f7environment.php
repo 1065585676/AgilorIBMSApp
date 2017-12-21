@@ -1,10 +1,46 @@
-<?php include('header.php');?>
+<?php session_start(); ?>
+<?php include_once("common/common.php"); ?>
 
+<?php
+$post_username = "";
+if(isset($_SESSION["inputUsername"])){
+    $post_username = $_SESSION["inputUsername"];
+} else if(isset($_COOKIE["inputUsername"]) and isset($_COOKIE["inputPassword"])) {
+    $post_username = $_COOKIE["inputUsername"];
+    $auto_login_result = RemoteUserLoginAuthentication($_COOKIE["inputUsername"], $_COOKIE["inputPassword"]);
+    if($auto_login_result == LOGIN_SUCCESS) {
+        // Set Session
+        $_SESSION["inputUsername"] = $post_username;
+    } else {
+        // Cookie outtime
+        header("location:index.php?req_url=".$_SERVER['REQUEST_URI']);
+    }
+} else {
+    // Login Again
+    header("location:index.php?req_url=".$_SERVER['REQUEST_URI']);
+}
+?>
+
+<?php include('header.php');?>
 <script type="text/javascript">
-	$(function(){
-		$('.f7Env').addClass('active');
-	})
+	$('.f7Env').addClass('active');
 </script>
+
+<head>
+    <title>Environment</title>
+    <style>
+		body {
+			background-color: #BABABA;
+		}
+		.f7-environment-container {
+			background-image: url('image/7.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+		}
+    </style>
+</head>
 
 <center>
 <div style="width: 90%; height: 100%; overflow:auto;">

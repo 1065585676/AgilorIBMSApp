@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Agilor IBMS App</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 	<!-- jquery && jquery ui -->
 	<script src="jQuery/jquery-3.2.1.js"></script>
 
@@ -21,209 +24,8 @@
 	<!-- bootstrap-switch -->
 	<link href="bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
 	<script src="bootstrap-switch-master/dist/js/bootstrap-switch.js"></script>
-
-	<style type="text/css">
-		body {
-			background-color: #BABABA;
-		}
-
-		.gongweibtnOn{
-			width: 64px;
-			height: 20px;
-			padding: 0 0 0 0;
-			background-color: #DEB887;
-		}
-		.gongweibtnOff{
-			width: 64px;
-			height: 20px;
-			padding: 0 0 0 0;
-			background-color: #808080;
-		}
-
-		.ligOn {
-			width: 50px;
-			height: 50px;
-			padding: 0 0 0 0;
-			background-image: url('image/LIG-ON.png');
-			border:0px;
-			background-size: 100% 100%;
-			background-color: rgba(255, 255, 255, 0);
-
-			color: white;
-			font-size: 12px;
-			padding-top: 34px;
-		}
-		.ligOff {
-			width: 50px;
-			height: 50px;
-			padding: 0 0 0 0;
-			background-image: url('image/LIG-OFF.png');
-			border:0px;
-			background-size: 100% 100%;
-			background-color: rgba(255, 255, 255, 0);
-
-			color: #D2B48C;
-			font-size: 12px;
-			padding-top: 34px;
-		}
-		.curOn{
-			width: 50px;
-			height: 50px;
-			padding: 0 0 0 0;
-			background-image: url('image/CUR-ON.png');
-			border:0px;
-			background-size: 100% 100%;
-			background-color: rgba(255, 255, 255, 0);
-
-			color: white;
-			font-size: 12px;
-			padding-top: 34px;
-		}
-		.curOff{
-			width: 50px;
-			height: 50px;
-			padding: 0 0 0 0;
-			background-image: url('image/CUR-OFF.png');
-			border:0px;
-			background-size: 100% 100%;
-			background-color: rgba(255, 255, 255, 0);
-
-			color: #D2B48C;
-			font-size: 12px;
-			padding-top: 34px;
-		}
-		.fcuOn{
-			width: 50px;
-			height: 50px;
-			padding: 0 0 0 0;
-			background-image: url('image/FCU-ON.png');
-			border:0px;
-			background-size: 100% 100%;
-			background-color: rgba(255, 255, 255, 0);
-
-			color: white;
-			font-size: 11px;
-			padding-top: 34px;
-		}
-		.fcuOff{
-			width: 50px;
-			height: 50px;
-			padding: 0 0 0 0;
-			background-image: url('image/FCU-OFF.png');
-			border:0px;
-			background-size: 100% 100%;
-			background-color: rgba(255, 255, 255, 0);
-
-			color: #D2B48C;
-			font-size: 11px;
-			padding-top: 34px;
-		}
-
-		#mySlider {
-			width: 80%;
-		}
-		#mySlider .slider-selection {
-			background: #81bfde;
-		}
-		#mySlider .slider-track-high {
-			background: #BABABA;
-		}
-
-		.lighting-container-7 {
-			background-image: url('image/7.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-			margin-left: 50px;
-			margin-top: 50px;
-		}
-		.curtain-container-7 {
-			background-image: url('image/7.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-		}
-		.f7-environment-container {
-			background-image: url('image/7.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-		}
-		.f7-fcu-container {
-			background-image: url('image/7.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-		}
-
-		.lighting-container-8 {
-			background-image: url('image/8.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-			margin-left: 50px;
-		}
-		.curtain-container-8 {
-			background-image: url('image/8.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-		}
-		.f8-environment-container {
-			background-image: url('image/8.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-		}
-		.f8-fcu-container {
-			background-image: url('image/8.png');
-			background-size: 100%;
-			width: 1220px;
-			height: 620px;
-			position: relative;
-		}
-		.bootstrap-switch-container{ white-space:nowrap; }
-	</style>
-
-	<script type="text/javascript">
-		function detectZoom (){
-			var ratio = 0,
-			screen = window.screen,
-			ua = navigator.userAgent.toLowerCase();
-			if (window.devicePixelRatio !== undefined) {
-				ratio = window.devicePixelRatio;
-			}
-			else if (~ua.indexOf('msie')) {
-				if (screen.deviceXDPI && screen.logicalXDPI) {
-					ratio = screen.deviceXDPI / screen.logicalXDPI;
-				}
-			}
-			else if (window.outerWidth !== undefined && window.innerWidth !== undefined) {
-				ratio = window.outerWidth / window.innerWidth;
-			}
-			if (ratio){
-				ratio = Math.round(ratio * 100);
-			}
-			return ratio;
-		};
-
-		window.onresize = function () {
-			if(detectZoom() != 100){
-				alert("检测到缩放：\n您好，对页面进行缩放浏览，会造成部分控件的布局异常！缩放后请刷新页面。");
-			}
-		}
-	</script>
 </head>
-<body>
 
-<div>
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -238,7 +40,6 @@
 				<a class="navbar-brand" href="http://www.biad.com.cn/" target="_blank"> B I A D </a>
 			</strong>
 		</div>
-
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
@@ -268,23 +69,38 @@
 				<button type="submit" class="btn btn-default">搜索</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">退出</a></li>
+				<?php
+				if(isset($_SESSION["inputUsername"])) {
+				?>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">YwY <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=$_SESSION["inputUsername"]?> <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Your Profile</a></li>
+						<li><a class="dropdown-item" href="#">个人信息</a></li>
+						<li><a class="dropdown-item" href="#">系统设置</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Account Assistant</a></li>
+						<li><a class="dropdown-item" href="logout.php">注销登录</a></li>
+						<li><a class="dropdown-item" href="#">帮助</a></li>
 					</ul>
 				</li>
+				<?php
+					} else {
+						echo
+						'
+						<li class="nav-item mr-md-2">
+							<a class="nav-link disabled" href="">Guest, please sign in</a>
+						</li>
+						';
+					}
+				?>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
-</div>
 
-<div id="myAlertTop" class="container alert alert-danger alert-dismissible hidden" role="alert">
-	<button type="button" class="close" onclick="$('#myAlertTop').addClass('hidden');" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<strong>错误!</strong> 设置值异常，请<a href=""> 联系维护人员 </a>.
-</div>
+<!-- 
+<?php
+
+print_r($_SESSION);
+print_r($_COOKIE);
+
+?> -->

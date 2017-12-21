@@ -1,10 +1,94 @@
-<?php include('header.php');?>
+<?php session_start(); ?>
+<?php include_once("common/common.php"); ?>
 
+<?php
+$post_username = "";
+if(isset($_SESSION["inputUsername"])){
+    $post_username = $_SESSION["inputUsername"];
+} else if(isset($_COOKIE["inputUsername"]) and isset($_COOKIE["inputPassword"])) {
+    $post_username = $_COOKIE["inputUsername"];
+    $auto_login_result = RemoteUserLoginAuthentication($_COOKIE["inputUsername"], $_COOKIE["inputPassword"]);
+    if($auto_login_result == LOGIN_SUCCESS) {
+        // Set Session
+        $_SESSION["inputUsername"] = $post_username;
+    } else {
+        // Cookie outtime
+        header("location:index.php?req_url=".$_SERVER['REQUEST_URI']);
+    }
+} else {
+    // Login Again
+    header("location:index.php?req_url=".$_SERVER['REQUEST_URI']);
+}
+?>
+
+<?php include('header.php');?>
 <script type="text/javascript">
-	$(function(){
-		$('.f8Lig').addClass('active');
-	})
+	$('.f8Lig').addClass('active');
 </script>
+
+<head>
+    <title>Lighting</title>
+    <style>
+		body {
+			background-color: #BABABA;
+		}
+		.gongweibtnOn{
+			width: 64px;
+			height: 20px;
+			padding: 0 0 0 0;
+			background-color: #DEB887;
+		}
+		.gongweibtnOff{
+			width: 64px;
+			height: 20px;
+			padding: 0 0 0 0;
+			background-color: #808080;
+		}
+		.ligOn {
+			width: 50px;
+			height: 50px;
+			padding: 0 0 0 0;
+			background-image: url('image/LIG-ON.png');
+			border:0px;
+			background-size: 100% 100%;
+			background-color: rgba(255, 255, 255, 0);
+
+			color: white;
+			font-size: 12px;
+			padding-top: 34px;
+		}
+		.ligOff {
+			width: 50px;
+			height: 50px;
+			padding: 0 0 0 0;
+			background-image: url('image/LIG-OFF.png');
+			border:0px;
+			background-size: 100% 100%;
+			background-color: rgba(255, 255, 255, 0);
+
+			color: #D2B48C;
+			font-size: 12px;
+			padding-top: 34px;
+		}
+		.lighting-container-8 {
+			background-image: url('image/8.png');
+			background-size: 100%;
+			width: 1220px;
+			height: 620px;
+			position: relative;
+			margin-left: 50px;
+		}
+		#mySlider {
+			width: 80%;
+		}
+		#mySlider .slider-selection {
+			background: #81bfde;
+		}
+		#mySlider .slider-track-high {
+			background: #BABABA;
+		}
+    </style>
+</head>
 
 <center>
 <div style="width: 90%; height: 100%; overflow:auto;">
