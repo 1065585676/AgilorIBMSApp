@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		//echo "poll";
 		$guid = $data["guid"];
 		$isRefresh = $data["isRefresh"];
-		$postUrl = "http://localhost:8098/AgilorReader/poll";
+		$postUrl = "http://localhost:8098/Agilor/poll";
 		$data = array(
 			'guid' => $guid,
 			'isRefresh' => $isRefresh
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		//echo "watch";
 		$targetsName = $data["targetsName"];
 		$timeout = $data["timeout"];
-		$postUrl = "http://localhost:8098/AgilorReader/watch";
+		$postUrl = "http://localhost:8098/Agilor/watch";
 		$data = array(
 			'targetsName' => $targetsName,
 			'timeout' => $timeout

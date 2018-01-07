@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$newValue = $_POST["newValue"];
 	$targetType = $_POST["targetType"];
 
-	$postUrl = "http://localhost:8098/AgilorReader/devices/" . $deviceName . "/" . $targetName;
+	$postUrl = "http://localhost:8098/Agilor/devices/" . $deviceName . "/" . $targetName;
 
 	$postUrl = $postUrl . "/set/";
 	$data = array(
